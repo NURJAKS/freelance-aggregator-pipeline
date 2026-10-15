@@ -1,0 +1,14 @@
+[Unit]
+Description=Auto Freelance Parser & Telegram Bot
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/home/nurjaks/Dev/auto_freelance-parser
+ExecStart=/home/nurjaks/Dev/auto_freelance-parser/.venv/bin/python main.py
+Restart=always
+RestartSec=10
+Environment="PATH=/home/nurjaks/Dev/auto_freelance-parser/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+
+[Install]
+WantedBy=default.target
