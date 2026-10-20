@@ -1,4 +1,4 @@
-# 🚀 auto_freelance-parser
+# 🚀 freelance-aggregator-pipeline
 
 Автономный асинхронный сервис сбора, фильтрации и моментальных уведомлений в Telegram о новых заказах на фрилансе и гибких контрактных подработках (15–25 ч/неделю) для **Python / Backend разработчика**.
 
@@ -23,7 +23,7 @@
 ## 🏗️ Архитектура проекта
 
 ```
-auto_freelance-parser/
+freelance-aggregator-pipeline/
 ├── config/
 │   ├── __init__.py
 │   └── settings.py          # Настройки, таймауты, белые и черные списки ключевых слов
@@ -62,8 +62,8 @@ auto_freelance-parser/
 
 ### 1. Клонирование и виртуальное окружение
 ```bash
-git clone <repo_url>
-cd auto_freelance-parser
+git clone https://github.com/NURJAKS/freelance-aggregator-pipeline.git
+cd freelance-aggregator-pipeline
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt

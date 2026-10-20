@@ -102,7 +102,7 @@ class TelegramBotListener:
 
         if cmd in ["/start", "меню", "start"]:
             welcome_text = (
-                "👋 <b>Добро пожаловать в панель управления auto_freelance-parser!</b>\n\n"
+                "👋 <b>Добро пожаловать в панель управления freelance-aggregator-pipeline!</b>\n\n"
                 "Я постоянно сканирую фриланс-биржи и присылаю новые задачи по вашему стеку.\n\n"
                 "Используйте кнопки меню ниже для управления:"
             )

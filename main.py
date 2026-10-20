@@ -100,7 +100,7 @@ async def process_orders(
 
 
 async def main():
-    logger.info("Запуск auto_freelance-parser...")
+    logger.info("Запуск freelance-aggregator-pipeline...")
 
     storage = OrderStorage(db_path=settings.DATABASE_PATH)
     await storage.init_db()
@@ -163,7 +163,7 @@ async def main():
     for source in sources:
         await source.close()
 
-    logger.info("Сервис auto_freelance-parser успешно остановлен.")
+    logger.info("Сервис freelance-aggregator-pipeline успешно остановлен.")
 
 
 if __name__ == "__main__":
